@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{{msg}}
+
+<form id="sampleForm" ng-submit="sendFormData()">
+	<label>Text:</label>
+	<summernote height="300" ng-model="summerNoteText"></summernote><br><br>
+
+
+	<label>Text box:</label>
+	<input type="text" name="normaltext">
+	<input type="hidden" name="summernotetext" value="{{summerNoteText}}">
+
+
+	<button type="submit">
+		Submit
+	</button>
+
+</form>
