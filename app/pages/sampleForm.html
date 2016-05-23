@@ -2,9 +2,9 @@
 
 {{msg}}
 
-<form id="sampleForm" ng-submit="sendFormData()">
+<form id="sampleForm" ng-submit="sendFormData()" enctype="multipart/form-data">
 	<label>Text:</label>
-	<summernote height="300" ng-model="summerNoteText"></summernote><br><br>
+	<summernote height="300" ng-model="summerNoteText" on-image-upload="imageUpload(files)"></summernote><br><br>
 
 
 	<label>Text box:</label>
